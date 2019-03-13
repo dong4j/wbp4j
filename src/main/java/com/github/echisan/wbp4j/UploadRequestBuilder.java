@@ -34,7 +34,7 @@ public class UploadRequestBuilder {
         return this;
     }
 
-    public WbpUploadRequest build() {
+    public WbpUploadRequest0 build() {
         WbpHttpRequest request = new DefaultWbpHttpRequest();
         if (username == null) {
             throw new IllegalArgumentException("用户名不能为空!");
@@ -42,7 +42,7 @@ public class UploadRequestBuilder {
         if (password == null) {
             throw new IllegalArgumentException("密码不能为空!");
         }
-        WbpUploadRequest uploadRequest = new WbpUploadRequest(request, this.username, this.password);
+        WbpUploadRequest0 uploadRequest = new WbpUploadRequest0(request, this.username, this.password);
         if (cookieCacheName != null) {
             CookieContext.defaultCookieFileName = this.cookieCacheName;
         }
@@ -50,7 +50,7 @@ public class UploadRequestBuilder {
             CookieContext.finalCookieFilePath = this.cookieCachePath;
         }
         if (tryLoginTime != 0) {
-            WbpUploadRequest.tryLoginTime = this.tryLoginTime;
+            WbpUploadRequest0.tryLoginTime = this.tryLoginTime;
         }
         return uploadRequest;
     }

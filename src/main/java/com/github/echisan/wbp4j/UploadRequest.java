@@ -7,5 +7,5 @@ import java.io.IOException;
 
 public interface UploadRequest {
 
-    UploadResponse upload(File image) throws IOException, Wbp4jException;
+    UploadResponse upload(byte[] image) throws IOException, Wbp4jException;
 }

@@ -10,7 +10,7 @@ public class UploadRequestBuilderTest {
 
     @Test
     public void build() throws IOException, Wbp4jException {
-        WbpUploadRequest request = new UploadRequestBuilder()
+        WbpUploadRequest0 request = new UploadRequestBuilder()
                 .setAcount("", "")
                 .setCookieCacheName("mycache1" + System.currentTimeMillis())
                 .setTryLoginTime(5 * 60 * 1000)
