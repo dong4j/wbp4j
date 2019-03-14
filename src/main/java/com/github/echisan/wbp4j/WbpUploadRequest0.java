@@ -285,4 +285,9 @@ class WbpUploadRequest0 implements UploadRequest {
         header.put("Referer", "https://weibo.com/");
         return header;
     }
+
+    @Override
+    public UploadResponse upload(byte[] image) throws IOException, Wbp4jException {
+        return null;
+    }
 }

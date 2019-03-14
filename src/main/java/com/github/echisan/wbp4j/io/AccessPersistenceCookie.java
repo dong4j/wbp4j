@@ -1,8 +1,10 @@
 package com.github.echisan.wbp4j.io;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
+/**
+ * 用于处理持久化cookie
+ */
 public abstract class AccessPersistenceCookie {
     private static final String DEFAULT_COOKIE_FILE_NAME = "wbpcookie";
     private final String cookieFileName;
@@ -12,7 +14,7 @@ public abstract class AccessPersistenceCookie {
     }
 
     public AccessPersistenceCookie() {
-        this.cookieFileName = DEFAULT_COOKIE_FILE_NAME;
+        this(DEFAULT_COOKIE_FILE_NAME);
     }
 
     public abstract void write(String cookie) throws IOException;
