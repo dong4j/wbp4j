@@ -70,7 +70,6 @@ class WbpUploadRequest0 implements UploadRequest {
         return body.substring(i + 9);
     }
 
-    @Override
     public UploadResponse upload(File image) throws IOException, Wbp4jException {
 
         // 判断是否已经登陆
